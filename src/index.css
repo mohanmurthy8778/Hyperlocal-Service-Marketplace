@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Teal & Coral Theme */
+  --color-primary: #0F766E;
+  --color-primary-hover: #0F645D;
+  --color-primary-light: #F0FDFA;
+  --color-primary-dark: #0D564E;
+
+  --color-accent: #F97316;
+  --color-accent-hover: #EA580C;
+
+  --color-cream: #F8FAFC;
+
+  /* Premium Charcoal/Warm-Dark theme colors mapped to responsive CSS variables */
+  --color-charcoal: var(--app-bg);
+  --color-charcoal-light: var(--app-card-bg);
+  --color-charcoal-dark: var(--app-sidebar-bg);
+
+  /* Override standard tailwind colors for seamless integration of dark & light specs */
+            
+  --color-primary-text: var(--text-primary);
+  --color-secondary-text: var(--text-secondary);
+  --color-muted-text: var(--text-muted);
+  --color-placeholder-text: var(--text-placeholder);
+  --color-bg-primary: var(--background-primary);
+  --color-bg-secondary: var(--background-secondary);
+  --color-border-primary: var(--border-color);
+  --color-bg-card: var(--card-background);
+  --color-btn-text: var(--button-text);
+  --color-btn-bg: var(--button-background);
+
+          
+  /* Override ratings and success colors slightly desaturated for the warm palette */
+  --color-amber-500: #F59E0B;
+  --color-amber-400: #FBBF24;
+  --color-emerald-500: #10B981;
+  --color-emerald-600: #059669;
+}
+
+:root {
+  --app-bg: #F8FAFC;
+  --app-bg-secondary: #F1F5F9;
+  --app-card-bg: #FFFFFF;
+  --app-sidebar-bg: #F1F5F9;
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --text-muted: #6B7280;
+  --text-placeholder: #9CA3AF;
+  --background-primary: #F8FAFC;
+  --background-secondary: #F1F5F9;
+  --border-color: #E2E8F0;
+  --card-background: #FFFFFF;
+  --button-text: #FFFFFF;
+  --button-background: #111827;
+}
+
+.dark {
+  --app-bg: #0B0F19;
+  --app-bg-secondary: #111827;
+  --app-card-bg: #111827;
+  --app-sidebar-bg: #111827;
+  --text-primary: #F9FAFB;
+  --text-secondary: #E5E7EB;
+  --text-muted: #D1D5DB;
+  --text-placeholder: #9CA3AF;
+  --background-primary: #0B0F19;
+  --background-secondary: #111827;
+  --border-color: #1E293B;
+  --card-background: #111827;
+  --button-text: #0B0F19;
+  --button-background: #F9FAFB;
+}
+
+/* Base custom classes */
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+/* Hide scrollbars for side layouts but allow sliding */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Simple fade-in animation keyframe */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Premium background dot-grid pattern */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Custom Phone Input Styles */
+.international-phone-input .PhoneInput {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.international-phone-input .PhoneInputCountry {
+  margin-right: 0.75rem;
+  padding-right: 0.75rem;
+  border-right: 1px solid var(--color-gray-200);
+}
+.dark .international-phone-input .PhoneInputCountry {
+  border-right-color: var(--color-gray-800);
+}
+.international-phone-input .PhoneInputInput {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-size: inherit;
+  padding: 0;
+}
+.international-phone-input .PhoneInputCountryIcon {
+  width: 1.5rem;
+  height: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.international-phone-input .PhoneInputCountryIcon--border {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.dark .international-phone-input .PhoneInputCountryIcon--border {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}

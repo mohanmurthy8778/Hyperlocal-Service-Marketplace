@@ -1,0 +1,212 @@
+[
+  {
+    "package_id": "pkg_srv_prov_1",
+    "provider_id": "prov_1",
+    "provider_name": "Home Cleaner",
+    "service_title": "Home Cleaner Service",
+    "category": "cleaning",
+    "price": 300,
+    "duration": "1-2 Hours",
+    "description": "Professional deep home cleaning services, sanitization, and dust removal with eco-friendly products.",
+    "features": [
+      "Verified Professional",
+      "Quality Service Guarantee"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&auto=format&fit=crop",
+    "availability_status": "ACTIVE",
+    "created_at": "2026-07-10T08:59:47.076Z",
+    "updated_at": "2026-07-10T08:59:47.076Z"
+  },
+  {
+    "package_id": "pkg_srv_prov_2",
+    "provider_id": "prov_2",
+    "provider_name": "Electrician",
+    "service_title": "Electrician Service",
+    "category": "repairs",
+    "price": 350,
+    "duration": "1-2 Hours",
+    "description": "Expert electrical repair, smart appliance setup, wiring fixes, and home safety checks.",
+    "features": [
+      "Verified Professional",
+      "Quality Service Guarantee"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&auto=format&fit=crop",
+    "availability_status": "ACTIVE",
+    "created_at": "2026-07-10T08:59:47.076Z",
+    "updated_at": "2026-07-10T08:59:47.076Z"
+  },
+  {
+    "package_id": "pkg_srv_prov_3",
+    "provider_id": "prov_3",
+    "provider_name": "Salon Expert",
+    "service_title": "Salon Expert Service",
+    "category": "salon",
+    "price": 600,
+    "duration": "1-2 Hours",
+    "description": "Luxury salon, facials, herbal massages, bridal grooming, and hair treatments in the comfort of your home.",
+    "features": [
+      "Verified Professional",
+      "Quality Service Guarantee"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&auto=format&fit=crop",
+    "availability_status": "ACTIVE",
+    "created_at": "2026-07-10T08:59:47.076Z",
+    "updated_at": "2026-07-10T08:59:47.076Z"
+  },
+  {
+    "package_id": "pkg_srv_prov_4",
+    "provider_id": "prov_4",
+    "provider_name": "Tutor",
+    "service_title": "Tutor Service",
+    "category": "tutoring",
+    "price": 450,
+    "duration": "1-2 Hours",
+    "description": "Interactive home tutoring and academic guidance in Mathematics, Physics, Chemistry, and Languages.",
+    "features": [
+      "Verified Professional",
+      "Quality Service Guarantee"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&auto=format&fit=crop",
+    "availability_status": "ACTIVE",
+    "created_at": "2026-07-10T08:59:47.076Z",
+    "updated_at": "2026-07-10T08:59:47.076Z"
+  },
+  {
+    "package_id": "pkg_srv_prov_5",
+    "provider_id": "prov_5",
+    "provider_name": "Painter",
+    "service_title": "Painter Service",
+    "category": "painting",
+    "price": 500,
+    "duration": "1-2 Hours",
+    "description": "Professional wall painters providing premium texture consultation, wallpaper assembly, and flawless finishing.",
+    "features": [
+      "Verified Professional",
+      "Quality Service Guarantee"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&auto=format&fit=crop",
+    "availability_status": "ACTIVE",
+    "created_at": "2026-07-10T08:59:47.076Z",
+    "updated_at": "2026-07-10T08:59:47.076Z"
+  },
+  {
+    "package_id": "pkg_srv_prov_6",
+    "provider_id": "prov_6",
+    "provider_name": "Gardener",
+    "service_title": "Gardener Service",
+    "category": "gardening",
+    "price": 300,
+    "duration": "1-2 Hours",
+    "description": "Expert garden landscaping, plant care, organic lawn mowing, weeding, and soil nourishment.",
+    "features": [
+      "Verified Professional",
+      "Quality Service Guarantee"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&auto=format&fit=crop",
+    "availability_status": "ACTIVE",
+    "created_at": "2026-07-10T08:59:47.076Z",
+    "updated_at": "2026-07-10T08:59:47.076Z"
+  },
+  {
+    "package_id": "pkg_srv_prov_7",
+    "provider_id": "prov_7",
+    "provider_name": "Plumber",
+    "service_title": "Plumber Service",
+    "category": "repairs",
+    "price": 400,
+    "duration": "1-2 Hours",
+    "description": "Reliable plumbing diagnostics, drainage cleaning, kitchen pipeline fixes, and water pump repair.",
+    "features": [
+      "Verified Professional",
+      "Quality Service Guarantee"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&auto=format&fit=crop",
+    "availability_status": "ACTIVE",
+    "created_at": "2026-07-10T08:59:47.076Z",
+    "updated_at": "2026-07-10T08:59:47.076Z"
+  },
+  {
+    "package_id": "pkg_srv_prov_8",
+    "provider_id": "prov_8",
+    "provider_name": "Carpenter",
+    "service_title": "Carpenter Service",
+    "category": "repairs",
+    "price": 450,
+    "duration": "1-2 Hours",
+    "description": "Precision woodworking, furniture repair, wooden door installation, and customized modular cabinet fixtures.",
+    "features": [
+      "Verified Professional",
+      "Quality Service Guarantee"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=800&auto=format&fit=crop",
+    "availability_status": "ACTIVE",
+    "created_at": "2026-07-10T08:59:47.076Z",
+    "updated_at": "2026-07-10T08:59:47.076Z"
+  },
+  {
+    "package_id": "pkg_srv_prov_9",
+    "provider_id": "prov_9",
+    "provider_name": "AC Technician",
+    "service_title": "AC Technician Service",
+    "category": "repairs",
+    "price": 500,
+    "duration": "1-2 Hours",
+    "description": "Proactive air conditioner servicing, filter cleaning, refrigerant level top-up, and AC circuit repair.",
+    "features": [
+      "Verified Professional",
+      "Quality Service Guarantee"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&auto=format&fit=crop",
+    "availability_status": "ACTIVE",
+    "created_at": "2026-07-10T08:59:47.076Z",
+    "updated_at": "2026-07-10T08:59:47.076Z"
+  },
+  {
+    "package_id": "pkg_srv_prov_10",
+    "provider_id": "prov_10",
+    "provider_name": "Mechanic",
+    "service_title": "Mechanic Service",
+    "category": "repairs",
+    "price": 550,
+    "duration": "1-2 Hours",
+    "description": "Instant roadside assistance, vehicle diagnostics, engine tuning, oil refills, and battery fixes.",
+    "features": [
+      "Verified Professional",
+      "Quality Service Guarantee"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?w=800&auto=format&fit=crop",
+    "availability_status": "ACTIVE",
+    "created_at": "2026-07-10T08:59:47.076Z",
+    "updated_at": "2026-07-10T08:59:47.076Z"
+  },
+  {
+    "package_id": "pkg_1783674038668_901",
+    "provider_id": "provider-123",
+    "provider_name": "mohan77",
+    "service_title": "cleaning",
+    "category": "cleaning",
+    "price": 100,
+    "duration": "2-3 hrs",
+    "description": "good",
+    "features": [],
+    "image_url": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800",
+    "availability_status": "ACTIVE",
+    "created_at": "2026-07-10T09:00:38.668Z",
+    "updated_at": "2026-07-10T09:00:38.668Z"
+  },
+  {
+    "package_id": "pkg_1783674596027_339",
+    "provider_id": "provider-123",
+    "provider_name": "mohan77",
+    "service_title": "Repairs",
+    "category": "cleaning",
+    "price": 100,
+    "duration": "2-3 hrs",
+    "description": "Good",
+    "features": [],
+    "image_url": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800",
+    "availability_status": "ACTIVE",
+    "created_at": "2026-07-10T09:09:56.027Z",
+    "updated_at": "2026-07-10T09:09:56.027Z"
+  }
+]

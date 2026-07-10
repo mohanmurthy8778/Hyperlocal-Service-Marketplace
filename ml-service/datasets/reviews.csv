@@ -1,0 +1,401 @@
+review_id,booking_id,rating,comment,service_id
+1,64,4,Average work done,21
+2,789,5,Could be better,76
+3,966,5,Could be better,79
+4,199,3,Loved it!,64
+5,712,5,Excellent service!,64
+6,541,5,Could be better,48
+7,184,4,High quality and polite,29
+8,76,4,Could be better,5
+9,623,5,Prompt and neat,84
+10,164,5,High quality and polite,79
+11,19,4,Excellent service!,9
+12,262,4,Very professional,30
+13,281,5,Very professional,48
+14,299,5,High quality and polite,20
+15,827,5,High quality and polite,49
+16,238,3,Average work done,85
+17,836,4,Excellent service!,85
+18,731,5,Average work done,55
+19,191,3,Prompt and neat,72
+20,41,5,Loved it!,60
+21,98,5,Very professional,78
+22,928,3,Could be better,16
+23,165,5,Could be better,52
+24,797,4,The provider was late,55
+25,122,5,The provider was late,55
+26,996,4,Excellent service!,35
+27,349,4,Could be better,60
+28,197,5,Excellent service!,99
+29,820,5,The provider was late,35
+30,493,2,Excellent service!,72
+31,852,5,Very professional,55
+32,482,4,Prompt and neat,92
+33,500,4,Prompt and neat,52
+34,519,4,Could be better,9
+35,438,4,Average work done,86
+36,123,4,Very professional,73
+37,885,3,Loved it!,49
+38,92,4,Excellent service!,79
+39,672,2,Excellent service!,100
+40,194,4,Could be better,3
+41,322,5,Loved it!,35
+42,210,3,Average work done,9
+43,613,5,Average work done,48
+44,18,5,Excellent service!,17
+45,710,5,Excellent service!,30
+46,305,5,Loved it!,78
+47,208,5,Could be better,41
+48,337,3,Very professional,90
+49,692,5,Loved it!,19
+50,918,5,Average work done,39
+51,346,5,Loved it!,41
+52,213,5,Loved it!,90
+53,225,3,Loved it!,95
+54,523,5,Very professional,82
+55,354,5,High quality and polite,24
+56,686,4,Excellent service!,22
+57,605,4,The provider was late,41
+58,244,5,Could be better,4
+59,158,5,Loved it!,29
+60,543,4,Could be better,94
+61,116,5,The provider was late,11
+62,849,4,High quality and polite,51
+63,534,3,Excellent service!,27
+64,310,3,Average work done,69
+65,249,3,The provider was late,17
+66,9,4,Could be better,93
+67,981,4,Could be better,37
+68,869,5,Could be better,61
+69,539,5,Average work done,8
+70,906,3,The provider was late,63
+71,441,4,Could be better,98
+72,853,4,Average work done,41
+73,408,5,Loved it!,82
+74,956,4,Could be better,73
+75,31,4,The provider was late,28
+76,283,5,Average work done,100
+77,741,5,High quality and polite,50
+78,79,4,Very professional,96
+79,893,4,Average work done,33
+80,139,4,Very professional,94
+81,773,5,Very professional,52
+82,512,5,Excellent service!,24
+83,559,4,Loved it!,28
+84,561,5,High quality and polite,59
+85,52,4,Very professional,77
+86,338,4,Prompt and neat,4
+87,471,4,Loved it!,32
+88,192,4,Very professional,1
+89,130,4,Average work done,84
+90,364,4,Very professional,35
+91,375,4,Average work done,70
+92,631,2,Could be better,39
+93,404,5,Average work done,57
+94,23,4,Prompt and neat,60
+95,153,3,Very professional,86
+96,835,5,Very professional,39
+97,809,5,The provider was late,6
+98,458,5,Loved it!,86
+99,6,4,The provider was late,52
+100,405,4,Excellent service!,37
+101,222,5,Average work done,20
+102,769,5,Prompt and neat,47
+103,393,4,The provider was late,32
+104,433,5,Very professional,28
+105,428,3,Excellent service!,81
+106,733,5,Prompt and neat,93
+107,302,5,High quality and polite,15
+108,473,5,Very professional,21
+109,75,5,Very professional,58
+110,739,5,Could be better,11
+111,324,4,High quality and polite,26
+112,296,4,Average work done,17
+113,751,3,Average work done,61
+114,987,4,The provider was late,65
+115,386,5,The provider was late,50
+116,499,4,Very professional,39
+117,470,4,Loved it!,64
+118,148,5,Very professional,46
+119,965,5,The provider was late,44
+120,898,3,High quality and polite,40
+121,685,4,The provider was late,87
+122,913,4,Very professional,10
+123,59,5,Prompt and neat,99
+124,472,3,Very professional,7
+125,634,5,Prompt and neat,20
+126,374,4,Prompt and neat,77
+127,359,4,Very professional,24
+128,625,5,Loved it!,34
+129,758,2,Loved it!,96
+130,932,4,Excellent service!,81
+131,501,2,The provider was late,23
+132,995,4,Loved it!,92
+133,341,5,Average work done,1
+134,189,4,Very professional,58
+135,974,4,Prompt and neat,100
+136,387,4,Very professional,33
+137,667,5,The provider was late,91
+138,897,5,High quality and polite,28
+139,878,5,Loved it!,25
+140,2,5,Loved it!,55
+141,680,4,Loved it!,25
+142,378,4,Prompt and neat,45
+143,565,4,Average work done,3
+144,29,4,Could be better,60
+145,498,4,Average work done,6
+146,826,5,Loved it!,61
+147,972,5,Average work done,32
+148,986,5,High quality and polite,65
+149,980,4,Loved it!,28
+150,581,5,Excellent service!,60
+151,639,5,Prompt and neat,67
+152,204,5,High quality and polite,46
+153,223,4,Could be better,75
+154,301,4,Prompt and neat,91
+155,883,2,Could be better,47
+156,950,4,Loved it!,21
+157,94,5,High quality and polite,67
+158,175,3,Loved it!,43
+159,957,4,Could be better,53
+160,406,5,Could be better,58
+161,163,5,High quality and polite,85
+162,952,4,Loved it!,18
+163,585,5,Excellent service!,47
+164,391,4,Prompt and neat,15
+165,922,4,High quality and polite,70
+166,649,4,Excellent service!,57
+167,736,5,Very professional,30
+168,925,5,Loved it!,93
+169,451,3,The provider was late,57
+170,793,5,High quality and polite,66
+171,485,4,Average work done,40
+172,662,5,Excellent service!,97
+173,807,2,Excellent service!,61
+174,422,4,High quality and polite,33
+175,830,5,Could be better,8
+176,901,5,Excellent service!,76
+177,80,4,Very professional,8
+178,992,4,Excellent service!,74
+179,71,4,The provider was late,83
+180,679,4,The provider was late,84
+181,971,5,Could be better,48
+182,740,5,Loved it!,64
+183,675,4,Loved it!,35
+184,271,4,Could be better,83
+185,49,5,Average work done,65
+186,63,4,Very professional,20
+187,243,5,The provider was late,46
+188,461,4,Could be better,40
+189,768,5,High quality and polite,46
+190,796,5,Prompt and neat,91
+191,456,5,Prompt and neat,51
+192,633,5,Prompt and neat,73
+193,220,4,Loved it!,34
+194,722,5,High quality and polite,94
+195,784,5,Excellent service!,71
+196,828,4,High quality and polite,46
+197,882,4,Excellent service!,30
+198,708,1,Prompt and neat,40
+199,39,4,Average work done,79
+200,749,4,Average work done,33
+201,287,5,Could be better,97
+202,721,4,Excellent service!,78
+203,557,5,Prompt and neat,34
+204,426,4,High quality and polite,86
+205,674,4,Average work done,62
+206,66,4,Excellent service!,31
+207,554,4,Could be better,21
+208,842,4,High quality and polite,88
+209,535,4,Prompt and neat,40
+210,988,4,Very professional,47
+211,832,5,Prompt and neat,20
+212,85,5,Loved it!,92
+213,340,4,Prompt and neat,35
+214,805,5,Could be better,82
+215,344,5,High quality and polite,100
+216,624,4,Could be better,16
+217,960,5,High quality and polite,98
+218,314,5,The provider was late,3
+219,177,4,The provider was late,61
+220,790,4,High quality and polite,45
+221,730,4,High quality and polite,41
+222,108,4,Very professional,13
+223,723,5,Very professional,41
+224,510,4,Prompt and neat,74
+225,477,5,Could be better,86
+226,186,5,Loved it!,39
+227,865,5,Could be better,19
+228,720,5,Average work done,59
+229,357,2,Could be better,85
+230,286,4,Loved it!,55
+231,55,5,Very professional,43
+232,127,1,Prompt and neat,89
+233,819,2,Loved it!,14
+234,677,5,Could be better,30
+235,976,5,Excellent service!,24
+236,366,4,The provider was late,92
+237,666,5,Loved it!,59
+238,144,5,Average work done,21
+239,453,4,Prompt and neat,74
+240,688,2,Loved it!,83
+241,129,5,High quality and polite,30
+242,224,4,Could be better,16
+243,100,3,Excellent service!,89
+244,941,4,The provider was late,85
+245,400,5,Excellent service!,21
+246,579,4,Prompt and neat,6
+247,486,4,Could be better,58
+248,854,4,Very professional,39
+249,298,5,The provider was late,4
+250,583,4,Could be better,11
+251,693,5,Excellent service!,73
+252,187,5,Very professional,25
+253,642,4,Average work done,25
+254,936,5,Prompt and neat,65
+255,331,5,Prompt and neat,21
+256,171,5,The provider was late,88
+257,709,4,Excellent service!,81
+258,348,5,Average work done,46
+259,755,5,High quality and polite,81
+260,117,5,The provider was late,10
+261,671,4,Could be better,14
+262,490,5,High quality and polite,66
+263,185,4,The provider was late,30
+264,419,4,Excellent service!,12
+265,43,4,Average work done,88
+266,874,5,Excellent service!,90
+267,327,4,Prompt and neat,64
+268,207,5,High quality and polite,66
+269,142,5,Very professional,47
+270,416,4,Loved it!,19
+271,750,5,Could be better,73
+272,572,4,Prompt and neat,5
+273,626,4,Prompt and neat,66
+274,474,5,High quality and polite,20
+275,437,5,Could be better,39
+276,82,5,The provider was late,10
+277,694,5,Prompt and neat,28
+278,804,3,Loved it!,25
+279,91,4,Average work done,66
+280,707,5,Prompt and neat,36
+281,664,2,Average work done,91
+282,8,4,Excellent service!,99
+283,235,5,Could be better,99
+284,181,2,The provider was late,63
+285,455,4,Average work done,16
+286,1,5,Prompt and neat,52
+287,295,5,The provider was late,33
+288,345,5,Loved it!,70
+289,524,5,The provider was late,42
+290,388,4,Average work done,91
+291,655,5,Could be better,17
+292,550,5,Average work done,46
+293,278,4,Very professional,100
+294,973,4,Very professional,57
+295,96,5,The provider was late,36
+296,411,5,High quality and polite,87
+297,101,5,Could be better,62
+298,329,5,High quality and polite,84
+299,336,5,Very professional,70
+300,764,5,Prompt and neat,40
+301,149,5,Excellent service!,7
+302,372,3,The provider was late,95
+303,551,5,Excellent service!,16
+304,547,4,Very professional,9
+305,230,5,Average work done,4
+306,335,5,Loved it!,100
+307,552,5,The provider was late,1
+308,313,5,Very professional,50
+309,442,4,Could be better,70
+310,237,4,Prompt and neat,37
+311,891,4,Loved it!,68
+312,457,5,The provider was late,39
+313,738,5,The provider was late,35
+314,507,5,Could be better,51
+315,515,4,High quality and polite,36
+316,44,4,Average work done,45
+317,4,5,The provider was late,68
+318,36,4,Average work done,86
+319,233,5,Very professional,10
+320,424,5,Prompt and neat,68
+321,978,5,Loved it!,34
+322,747,4,Loved it!,67
+323,530,5,Prompt and neat,7
+324,615,4,The provider was late,17
+325,651,5,The provider was late,46
+326,414,3,Very professional,88
+327,609,2,High quality and polite,58
+328,725,5,High quality and polite,68
+329,748,4,High quality and polite,44
+330,48,5,Average work done,44
+331,702,5,High quality and polite,47
+332,105,5,Prompt and neat,12
+333,56,5,Loved it!,1
+334,617,4,Loved it!,11
+335,798,5,Average work done,1
+336,72,3,Very professional,7
+337,50,4,Prompt and neat,87
+338,367,5,Loved it!,14
+339,860,4,Prompt and neat,77
+340,930,5,Loved it!,40
+341,548,5,Excellent service!,12
+342,866,5,Very professional,76
+343,516,5,Very professional,85
+344,211,3,Could be better,36
+345,128,5,Excellent service!,22
+346,467,5,Average work done,64
+347,266,4,Loved it!,60
+348,395,3,Could be better,20
+349,15,5,Loved it!,42
+350,221,4,Loved it!,53
+351,215,4,High quality and polite,54
+352,851,5,High quality and polite,39
+353,538,5,High quality and polite,1
+354,83,5,High quality and polite,38
+355,38,5,High quality and polite,49
+356,212,5,Excellent service!,86
+357,90,1,Very professional,73
+358,466,4,Average work done,99
+359,30,4,Prompt and neat,21
+360,363,5,High quality and polite,7
+361,111,4,Excellent service!,95
+362,279,4,Could be better,64
+363,783,5,Could be better,55
+364,316,4,Loved it!,94
+365,232,4,Average work done,20
+366,347,5,Could be better,54
+367,14,3,Average work done,21
+368,429,3,Average work done,24
+369,929,4,Excellent service!,94
+370,695,5,Prompt and neat,84
+371,528,5,High quality and polite,12
+372,159,4,Average work done,13
+373,146,5,Excellent service!,21
+374,214,4,Loved it!,58
+375,459,5,Very professional,76
+376,35,3,Loved it!,59
+377,927,5,Excellent service!,3
+378,873,5,Excellent service!,45
+379,431,5,Excellent service!,61
+380,990,4,Average work done,19
+381,914,4,Excellent service!,14
+382,714,5,Very professional,52
+383,449,3,Average work done,2
+384,380,5,Loved it!,56
+385,589,5,Very professional,98
+386,276,5,Could be better,58
+387,450,3,The provider was late,22
+388,504,5,Loved it!,43
+389,195,5,Excellent service!,65
+390,711,5,High quality and polite,9
+391,602,3,High quality and polite,35
+392,156,2,Average work done,22
+393,761,4,High quality and polite,45
+394,479,4,Loved it!,85
+395,259,5,Average work done,4
+396,875,5,Loved it!,92
+397,297,4,Excellent service!,70
+398,219,5,Prompt and neat,14
+399,643,1,Prompt and neat,47
+400,256,4,Very professional,80

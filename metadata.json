@@ -1,0 +1,6 @@
+{
+  "name": "ServiceHub",
+  "description": "ServiceHub - Your premium marketplace connecting you with skilled local service professionals for home maintenance, cleaning, wellness, and repairs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

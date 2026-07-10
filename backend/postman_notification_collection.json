@@ -1,0 +1,370 @@
+{
+  "info": {
+    "_postman_id": "8c4d29cf-412b-42eb-8bfb-8fc715d5d678",
+    "name": "ServiceHub - Hyperlocal Service Marketplace Notification Module",
+    "description": "Comprehensive Postman collection containing standard API endpoints for the complete Notification, Scheduled Reminders, Device Registration, and Admin Broadcast system.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Notifications",
+      "item": [
+        {
+          "name": "Get User Notifications Paginated",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/notifications?page=0&size=10",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "notifications"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "Retrieves a paginated list of notifications for the currently authenticated user sorted by newest first."
+          }
+        },
+        {
+          "name": "Get Notification Details by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/notifications/1",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "notifications",
+                "1"
+              ]
+            },
+            "description": "Fetches full metadata for a specific notification ID, ensuring ownership access controls are enforced."
+          }
+        },
+        {
+          "name": "Get Unread Notifications Count",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/notifications/unread-count",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "notifications",
+                "unread-count"
+              ]
+            },
+            "description": "Returns the live count of unread alert notifications to populate the header visual notification bell."
+          }
+        },
+        {
+          "name": "Mark Notification as Read",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/notifications/read/1",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "notifications",
+                "read",
+                "1"
+              ]
+            },
+            "description": "Updates a single notification status to READ."
+          }
+        },
+        {
+          "name": "Mark All Notifications as Read",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/notifications/read-all",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "notifications",
+                "read-all"
+              ]
+            },
+            "description": "Performs a bulk update marking all unread notifications belonging to the logged-in user as READ."
+          }
+        },
+        {
+          "name": "Delete Notification",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/notifications/1",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "notifications",
+                "1"
+              ]
+            },
+            "description": "Permanently deletes a specific notification item from the user's view log."
+          }
+        },
+        {
+          "name": "Clear All Notifications",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/notifications/clear-all",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "notifications",
+                "clear-all"
+              ]
+            },
+            "description": "Performs a bulk wipe clearing all historic notification entries from the authenticated user's profile."
+          }
+        }
+      ]
+    },
+    {
+      "name": "FCM Push Tokens",
+      "item": [
+        {
+          "name": "Register Device Token",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"token\": \"fcm_device_token_string_here_xyz_123_abc\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/notifications/register-device",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "notifications",
+                "register-device"
+              ]
+            },
+            "description": "Saves or binds an active FCM device token to the authenticated user's account for instant push notification deliveries."
+          }
+        },
+        {
+          "name": "Unregister Device Token",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"token\": \"fcm_device_token_string_here_xyz_123_abc\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/notifications/remove-device",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "notifications",
+                "remove-device"
+              ]
+            },
+            "description": "Removes a registered device token from the database, preventing future push deliveries on logout or device switch."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Admin Console",
+      "item": [
+        {
+          "name": "Admin: Send Targeted Alert",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token_admin}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": 2,\n  \"title\": \"Security Update Required\",\n  \"message\": \"We detected a login from a new device. Please verify your profile info.\",\n  \"type\": \"SYSTEM\",\n  \"priority\": \"HIGH\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/admin/notifications/send",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "notifications",
+                "send"
+              ]
+            },
+            "description": "Administrator endpoint to deliver a priority, custom targeted notification alert to a specific user."
+          }
+        },
+        {
+          "name": "Admin: Broadcast Marketplace Announcement",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwt_token_admin}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Scheduled System Maintenance\",\n  \"message\": \"ServiceHub will undergo a scheduled database upgrade this Sunday at 2:00 AM UTC. Expect minor latency.\",\n  \"type\": \"SYSTEM\",\n  \"priority\": \"URGENT\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/admin/notifications/broadcast",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "notifications",
+                "broadcast"
+              ]
+            },
+            "description": "Administrator endpoint to broadcast an alert announcement to ALL registered customer, provider, and administrative accounts."
+          }
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3000",
+      "type": "string"
+    },
+    {
+      "key": "jwt_token",
+      "value": "your_user_jwt_token_here",
+      "type": "string"
+    },
+    {
+      "key": "jwt_token_admin",
+      "value": "your_admin_jwt_token_here",
+      "type": "string"
+    }
+  ]
+}

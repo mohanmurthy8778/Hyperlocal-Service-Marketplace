@@ -1,0 +1,159 @@
+{
+  "info": {
+    "_postman_id": "b3e0c0a3-1a2b-4c3d-8e5f-1234567890ab",
+    "name": "ServiceHub Hyperlocal Marketplace API Collection",
+    "description": "Complete test suite for ServiceHub API including Auth, CRUD, ML, Payments, and Notifications.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Authentication",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"email\": \"john@example.com\",\n  \"password\": \"password123\",\n  \"role\": \"CUSTOMER\",\n  \"phone\": \"+1234567890\"\n}"
+            },
+            "url": {"raw": "{{baseUrl}}/auth/register", "host": ["{{baseUrl}}"], "path": ["auth", "register"]}
+          }
+        },
+        {
+          "name": "Login",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "pm.environment.set(\"jwt_token\", jsonData.accessToken);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"john@example.com\",\n  \"password\": \"password123\"\n}"
+            },
+            "url": {"raw": "{{baseUrl}}/auth/login", "host": ["{{baseUrl}}"], "path": ["auth", "login"]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "2. Customer APIs",
+      "item": [
+        {
+          "name": "Search Services",
+          "request": {
+            "method": "GET",
+            "header": [{"key": "Authorization", "value": "Bearer {{jwt_token}}"}],
+            "url": {"raw": "{{baseUrl}}/services?q=cleaning", "host": ["{{baseUrl}}"], "path": ["services"], "query": [{"key": "q", "value": "cleaning"}]}
+          }
+        },
+        {
+          "name": "Create Booking",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{jwt_token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"serviceId\": 1,\n  \"bookingDate\": \"2026-10-15\",\n  \"bookingTime\": \"10:00 AM\",\n  \"addressId\": 1,\n  \"notes\": \"Please bring your own supplies.\"\n}"
+            },
+            "url": {"raw": "{{baseUrl}}/customer/bookings", "host": ["{{baseUrl}}"], "path": ["customer", "bookings"]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "3. Provider APIs",
+      "item": [
+        {
+          "name": "Accept Booking",
+          "request": {
+            "method": "PUT",
+            "header": [{"key": "Authorization", "value": "Bearer {{jwt_token}}"}],
+            "url": {"raw": "{{baseUrl}}/provider/bookings/1/accept", "host": ["{{baseUrl}}"], "path": ["provider", "bookings", "1", "accept"]}
+          }
+        },
+        {
+          "name": "Create Service",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{jwt_token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Deep House Cleaning\",\n  \"categoryId\": 2,\n  \"price\": 120.00,\n  \"duration\": \"3 hours\",\n  \"description\": \"Thorough cleaning of entire house.\"\n}"
+            },
+            "url": {"raw": "{{baseUrl}}/provider/services", "host": ["{{baseUrl}}"], "path": ["provider", "services"]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "4. Payment (Razorpay)",
+      "item": [
+        {
+          "name": "Create Order",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{jwt_token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"bookingId\": 1,\n  \"amount\": 120.00\n}"
+            },
+            "url": {"raw": "{{baseUrl}}/payments/order", "host": ["{{baseUrl}}"], "path": ["payments", "order"]}
+          }
+        }
+      ]
+    },
+    {
+      "name": "5. Machine Learning",
+      "item": [
+        {
+          "name": "Get Recommendations",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Authorization", "value": "Bearer {{jwt_token}}"},
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"customerId\": 1\n}"
+            },
+            "url": {"raw": "{{baseUrl}}/ml/recommendations", "host": ["{{baseUrl}}"], "path": ["ml", "recommendations"]}
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080/api",
+      "type": "string"
+    },
+    {
+      "key": "jwt_token",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}
